@@ -1,0 +1,16 @@
+/*
+ * README
+ * ------
+ * Include the names of your group members and any special instructions
+ * for compiling, etc., if you did something besides the standard
+ * Makefile.  Also, document any additional features in this file.
+ *
+ * Group Members: Nelson Cheng
+ *
+ */
+
+	1. Multiple different objects
+	2. Textured plane
+	3. Anti-aliasing
+	4. Newton's cradle scene + cool looking stuff.
+

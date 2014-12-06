@@ -1,0 +1,28 @@
+Project 4 Individual Written Questions 
+
+Name: Nelson Cheng
+Email Address: standbackimgoingtotryscience@gmail.com
+
+1.
+	a. Increase. Each pixel is calculated then drawn individually. 
+		An increase of window size means an increase in amount of pixels to calculate and draw. 
+	b. Same. The number of pixels calculated does not change, 
+		and the same interactions of light and rays take place if all of the objects are increased in size. 
+	c. Increase. More objects in the scene will mean that there are more intersections, shadows, and reflections 
+		to calculate. To make the scene look realistic with many objects, a deeper level of recursion 
+		is necessary to more accurately depict the rays' interactions with more surfaces. 
+
+2. Reflection and shadows would be better suited for a ray tracer rather an OpenGL, 
+	because a ray tracer would be able to take into account the light from reflections and darkness in shadows, 
+	while OpenGL renders a primitive in isolation. Transparency could be more easily implemented in OpenGL, 
+	by setting an object's alpha level, rather than having to compose each point through calculations.
+
+3. With a regular lattice, we could speed up the ray tracer by first calculating a ray within a cube, 
+	instead of the entire scene. Then if the ray does not hit anything, trace it through the next cube. 
+	Repeat this until all of cubes with objects have been accessed. 
+	By calculating in a smaller space and only calculating the cubes that contain objects, 
+	the regular lattice will speed up ray tracing.
+
+4. The current code generates an image under perspective projection, 
+	since the rays emit from one point, the origin. To toggle between the two projection modes, 
+	you would allow for user input that switches between emitting rays from a certain point for perspective pro
